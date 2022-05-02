@@ -6,16 +6,9 @@ h1 {
   color:rgb(131, 180, 139);
 }
 
+
 h2 {
   font-size:xx-large;
-}
-
-.logo {
-  grid-area: logo;
-}
-
-nav {
-  grid-area: nav;
 }
 
 ul { 
@@ -25,37 +18,27 @@ ul {
 }
 
 header {
-  grid-area: header;
-  text-align: center;
-  font-size:xx-large;
+  font-size: xx-large;
 }
 
-main {
-  grid-area: main;
-  max-width: 800px;
+
+.about {
+  grid-area: about;
 }
 
-footer {
-  grid-area: footer;
-}
 .volunteers {
-  border:5px solid black;
-  height: 600px;
-  width: 900px;
-}
-.volunteers img {
-  width: 100%;
+  grid-area: volunteers;
 }
 
+figcaption {
+  align-items: center;
+}
 
 .container {
-  display:grid;
-  grid-template-columns: 300px 1fr;
-  grid-template-rows: 50px 100px 1fr 1fr;
+  display: grid;
+  grid-template-columns: 800px 500px;
+  grid-template-rows: 300px 1fr;
   grid-gap: 1rem;
   grid-template-areas: 
-  "logo header"
-  "nav nav"
-  "main main"
-  "footer footer" ;
+  "volunteers about" 
 }
