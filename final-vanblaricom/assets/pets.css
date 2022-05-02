@@ -1,0 +1,31 @@
+body {
+  background-color: whitesmoke;
+}
+
+h1 {
+  color:rgb(131, 180, 139);
+}
+
+.oliver {
+  grid-area: oliver;
+}
+
+.lucy {
+  grid-area: lucy;
+}
+
+.bob {
+  grid-area: bob;
+}
+
+.george {
+  grid-area: george;
+}
+
+.ivy { 
+  grid-area: ivy;
+}
+
+.luna {
+  grid-area: luna;
+}
