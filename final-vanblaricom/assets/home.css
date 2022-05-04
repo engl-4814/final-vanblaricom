@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Public+Sans:wght@400;600&display=swap');
+
 body {
   background-color:whitesmoke;
 }
@@ -17,11 +20,22 @@ ul {
   gap: 1rem;
 }
 
+/* Images */
+
+img {
+  width: 100%;
+}
+
+/* HEADER */
+
 header {
   font-size: xx-large;
   text-align: center;
 }
 
+.logo img {
+  width: 100px;
+}
 
 .about {
   grid-area: about;
@@ -29,6 +43,18 @@ header {
 
 .volunteers {
   grid-area: volunteers;
+} 
+
+/* Medium Screens */
+
+@media screen and (min-width: 800px) {
+  .container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 300px 1fr;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "volunteers about" 
 }
 
 figcaption {
@@ -36,11 +62,6 @@ figcaption {
   text-align: center;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 800px 500px;
-  grid-template-rows: 300px 1fr;
-  grid-gap: 1rem;
-  grid-template-areas: 
-  "volunteers about" 
+/*
+make media condition with higher value to have different fr */
 }
