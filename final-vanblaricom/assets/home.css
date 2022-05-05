@@ -5,9 +5,7 @@ body {
   background-color:whitesmoke;
 }
 
-h1 {
-  color:rgb(131, 180, 139);
-}
+/* Fonts */ 
 
 h1 {
   color:rgb(131, 180, 139);
@@ -58,6 +56,11 @@ header {
   grid-area: volunteers;
 } 
 
+figcaption {
+  align-items: center;
+  text-align: center;
+}
+
 /* Medium Screens */
 
 @media screen and (min-width: 800px) {
@@ -69,6 +72,9 @@ header {
     grid-template-areas: 
     "volunteers about" ;
 }
+}
+
+/* Large Screens */ 
 
 @media screen and (min-width: 1500px) {
 .container {
@@ -79,14 +85,4 @@ header {
   grid-template-areas:
   "volunteers about" ;
 }
-}
-
-
-figcaption {
-  align-items: center;
-  text-align: center;
-}
-
-/*
-make media condition with higher value to have different fr */
 }

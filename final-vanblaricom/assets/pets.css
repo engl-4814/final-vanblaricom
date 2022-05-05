@@ -5,6 +5,8 @@ body {
   background-color: whitesmoke;
 }
 
+/* Fonts */ 
+
 h1 {
   color:rgb(131, 180, 139);
   font-family: UDPMincho;
@@ -26,6 +28,9 @@ ul {
   flex-direction: row;
   gap: 1rem;
 }
+
+/* Cards */ 
+
 .oliver {
   grid-area: oliver;
 }
@@ -54,6 +59,8 @@ button {
   color:rgb(131, 180, 139);
 }
 
+/* Medium Screens */ 
+
 @media screen and (min-width: 800px) {
 .container {
   display: grid;
@@ -66,6 +73,8 @@ button {
   "ivy luna" ;
 }
 }
+
+/* Large Screens */ 
 
 @media screen and (min-width: 1500px) {
   .container {
