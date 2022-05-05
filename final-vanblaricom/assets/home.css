@@ -70,7 +70,7 @@ header {
     "volunteers about" ;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1500px) {
 .container {
   display:grid;
   grid-template-columns: 2fr 1fr;
