@@ -9,15 +9,28 @@ h1 {
   color:rgb(131, 180, 139);
 }
 
+h1 {
+  color:rgb(131, 180, 139);
+  font-family: UDPMincho;
+  font-weight: 400;
+}
 
 h2 {
-  font-size:xx-large;
+  font-family: Public Sans;
+  font-weight: 600;
 }
+
+p {
+  font-family: Public Sans;
+  font-weight: 400;
+}
+
 
 ul { 
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  font-family: Pubic Sans;
 }
 
 /* Images */
@@ -50,12 +63,24 @@ header {
 @media screen and (min-width: 800px) {
   .container {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 300px 1fr;
     grid-gap: 1rem;
     grid-template-areas: 
-    "volunteers about" 
+    "volunteers about" ;
 }
+
+@media screen and (min-width: 1000px) {
+.container {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 400px 1fr;
+  grid-gap: 1rem;
+  grid-template-areas:
+  "volunteers about" ;
+}
+}
+
 
 figcaption {
   align-items: center;

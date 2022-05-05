@@ -7,6 +7,18 @@ body {
 
 h1 {
   color:rgb(131, 180, 139);
+  font-family: UDPMincho;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: Public Sans;
+  font-weight: 600;
+}
+
+p {
+  font-family: Public Sans;
+  font-weight: 400;
 }
 
 ul {
@@ -42,6 +54,7 @@ button {
   color:rgb(131, 180, 139);
 }
 
+@media screen and (min-width: 800px) {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -51,4 +64,17 @@ button {
   "oliver lucy"
   "bob george"
   "ivy luna" ;
+}
+}
+
+@media screen and (min-width: 1500px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    grid-template-areas:
+    "oliver lucy bob"
+    "george ivy luna";
+  }
 }
